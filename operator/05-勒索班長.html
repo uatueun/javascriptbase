@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 接收班長口袋裡的錢數？	 
+        // 若大於等於2000，請大家吃西餐。 
+        // 若小於2000，大於等於1500，請大家吃快餐。
+        // 若小於1500，大於等於1000，請大家喝飲料。 
+        // 若小於1000，大於等於500，請大家吃棒棒糖。
+        // 否則提醒班長下次把錢帶夠
+        var money = prompt('班長你帶多少錢')
+        if (money >= 2000) {
+            alert('請大家吃西餐');
+        } else if (money > 2000 && money >= 1500) {
+            alert('請大家吃快餐');
+        } else if (money > 1500 && money >= 1000) {
+            alert('請大家喝飲料');
+        } else if (money > 100 && money >= 500) {
+            alert('請大家吃棒棒糖');
+        } else {
+            alert('下次把錢帶夠');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

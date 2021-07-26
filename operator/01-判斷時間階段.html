@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 用戶輸入的時間在6-12之間 彈出“上午好”；
+        // 用戶輸入的時間在13-18之間 彈出“下午好”；
+        // 用戶輸入的時間在19-23之間 彈出“晚上好”；
+        // 用戶輸入的時間在0-5之間 彈出“這是休息時間，不要說話！”；
+        var time = prompt('請問現在幾點');
+        if (time >= 6 && time <= 12) {
+            alert('早上好');
+        } else if (time >= 13 && time <= 18) {
+            alert('下午好');
+        } else if (time >= 19 && time <= 23) {
+            alert('晚上好')
+        } else {
+            alert('吵甚麼吵,給不給人睡覺R')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
