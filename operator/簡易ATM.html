@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var money = 100;
+        var moneySum = 0;
+        var ic = true;
+        var mode = parseInt(prompt('請選擇您要的操作: \n 1.存錢 \n 2.取錢 \n 3.顯示餘額 \n 4.退出'))
+        do {
+            switch (mode) {
+                case 1:
+                    moneySum = parseInt(money) + parseInt(prompt('請輸入要存的金額'));
+                    alert('存款總額:' + moneySum);
+                    mode = parseInt(prompt('請選擇您要的操作: \n 1.存錢 \n 2.取錢 \n 3.顯示餘額 \n 4.退出'))
+                    break;
+                case 2:
+                    var reMoney = parseInt(prompt('請輸入領取金額'));
+                    reMoney = parseInt(reMoney);
+                    console.log(reMoney);
+
+                    money = parseInt(money)
+                    console.log(money);
+                    if (reMoney > money) {
+                        alert('抱歉!餘額不足')
+                    } else {
+                        alert('帳戶餘額:' + (money - reMoney));
+                    }
+                    mode = parseInt(prompt('請選擇您要的操作: \n 1.存錢 \n 2.取錢 \n 3.顯示餘額 \n 4.退出'))
+                    break;
+                case 3:
+                    alert('帳戶餘額:' + moneySum);
+                    mode = parseInt(prompt('請選擇您要的操作: \n 1.存錢 \n 2.取錢 \n 3.顯示餘額 \n 4.退出'))
+                    break;
+                case 4:
+                    var flag = prompt('是否退出ATM(Y/N)');
+                    while (flag != ('Y' && 'y')) {
+                        flag = prompt('是否退出ATM(Y/N)')
+                    }
+                    alert('退出成功 感謝您的使用');
+                    break;
+                default:
+                    alert('輸入錯誤 請輸入1~4之間');
+                    mode = parseInt(prompt('請選擇您要的操作: \n 1.存錢 \n 2.取錢 \n 3.顯示餘額 \n 4.退出'))
+                    break;
+            }
+        } while (ic);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
