@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.
+        // var Car = new Object()
+        // Car.weight = '1t';
+        // Car.color = '深藍';
+        // Car.brand = 'benz';
+        // Car.use = function() {
+        //     console.log('載人');
+        //     console.log('拉貨');
+        //     console.log('耕田');
+        // }
+        // console.log(Car);
+        // 2.
+        function Car(weight, color, brand) {
+            this.weight = weight;
+            this.color = color;
+            this.brand = brand;
+            this.use1 = function(u1) {
+                console.log(u1);
+            }
+            this.use2 = function(u2) {
+                console.log(u2);
+            }
+            this.use3 = function(u3) {
+                console.log(u3);
+            }
+        }
+        var car = new Car('1t', '深藍', 'benz')
+        car.use1('載人')
+        car.use2('拉貨')
+        car.use3('耕田')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

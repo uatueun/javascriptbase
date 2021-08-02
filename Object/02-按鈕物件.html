@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Bottom(width, height, bgc) {
+            this.width = width;
+            this.height = height;
+            this.bgc = bgc;
+            this.click = function(click1) {
+                console.log(click1);
+            }
+        }
+        var btn = new Bottom(30, 20, 'pink')
+        console.log(btn.width, btn.height, btn.bgc);
+        btn.click('點擊')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

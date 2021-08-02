@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Computer(color, weight, brand, model) {
+            this.color = color;
+            this.weight = weight;
+            this.brand = brand;
+            this.model = model;
+            this.watchMovie = function(movie) {
+                console.log(movie);
+            }
+            this.lisMusic = function(music) {
+                console.log(music);
+            }
+            this.playGame = function(Game) {
+                console.log(Game);
+            }
+            this.coding = function(code) {
+                console.log(code);
+            }
+        }
+        var cp1 = new Computer('黑色', '1kg', 'asus', 'ATX145')
+        console.log(cp1);
+        cp1.watchMovie('看電影')
+        cp1.lisMusic('聽音樂')
+        cp1.playGame('打遊戲')
+        cp1.coding('寫代碼')
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
