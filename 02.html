@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 'abaasdffggghhjjkkgfddsssss3444343'
+        var str = 'abaasdffggghhjjkkgfddsssss3444343'
+
+        // 1.字符的長度
+        console.log(str.length);
+        // 2.取出定位置的字符 如0,3,5,9等
+        console.log(str.charAt(0));
+        console.log(str.charAt(3));
+        console.log(str.charAt(5));
+        console.log(str.charAt(9));
+        // 3.查找指定字符是否在以上字符中存在 如i,c,b等
+        var i = str.indexOf('i')
+        var c = str.indexOf('c')
+        var b = str.indexOf('b')
+        console.log(i); //沒有
+        console.log(c); //沒有
+        console.log(b); //有
+        // 4.替換指定的字符如g換成22,ss替換成b
+        while (str.indexOf('g') !== -1) {
+            str = str.replace('g', '22')
+        }
+        while (str.indexOf('ss') !== -1) {
+            str = str.replace('ss', 'b')
+        }
+        console.log(str);
+        // 5.擷取指定開始位置到結束位置的字符串 如:取得1-5的字符串
+        console.log(str.substr(1, 5));
+        // 6.找出以上字符串中出現最多字符跟字數
+        var mach = {}
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i)
+            if (mach[chars]) {
+                mach[chars]++;
+            } else {
+                mach[chars] = 1
+            }
+        }
+        console.log(mach);
+
+        var max = 0
+        varch = ''
+        for (var k in mach) {
+            if (mach[k] > max) {
+                max = mach[k]
+                ch = k
+            }
+        }
+
+        console.log('最多的字符是' + ch);
+        console.log(ch + '的數量有' + max + '個');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
